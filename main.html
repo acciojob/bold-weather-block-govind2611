@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #b96fa1, #5a3f8c);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .location {
+            font-size: 25px;
+            font-weight: 600;
+            color: #fff;
+            text-align: center;
+        }
+
+        .weather-block {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .weather-item {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .item-temp {
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .item-temp-number1 {
+            font-weight: 600;
+            font-size: 24px;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="location">Selected Location</div>
+    <div class="weather-block">
+        <div class="weather-item">
+            <div class="item-temp"><span class="item-temp-number1">72</span> / 57</div>
+            <div>Monday</div>
+        </div>
+        <div class="weather-item">
+            <div class="item-temp"><span class="item-temp-number1">68</span> / 54</div>
+            <div>Tuesday</div>
+        </div>
+        <div class="weather-item">
+            <div class="item-temp"><span class="item-temp-number1">75</span> / 62</div>
+            <div>Wednesday</div>
+        </div>
+        <!-- Add more weather items here -->
+    </div>
 </body>
-
 </html>
